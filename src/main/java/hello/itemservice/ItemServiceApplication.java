@@ -27,14 +27,6 @@ public class ItemServiceApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ItemServiceApplication.class, args);
 	}
-
-//	echo "# practiceGitAction" >> README.md
-//	git init
-//	git add README.md
-//	git commit -m "first commit"
-//	git branch -M main
-//	git remote add origin https://github.com/justinkim12/practiceGitAction.git
-//	git push -u origin main
 	@Bean
 	@Profile("local")
 	public TestDataInit testDataInit(ItemRepository itemRepository) {
